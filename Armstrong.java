@@ -13,7 +13,7 @@ public class Armstrong {
 		int len = String.valueOf(temp).length();
 		while(n!=0) {
 			int digit = n%10;
-			tot += Math.pow(digit,len);
+			tot += (int)Math.pow(digit,len);
 			n/=10;
 		}
 		if(temp == tot) {
